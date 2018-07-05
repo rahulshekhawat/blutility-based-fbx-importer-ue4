@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "4.19",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "BlutilityProject",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name" : "AutoFbxImporter",
+			"Type" : "Editor",
+			"LoadingPhase" : "PostEngineInit",
+			"AdditionalDependencies": [
+				"CoreUObject",
+				"AssetRegistry",
+				"UnrealEd"
+			]
+			
+		}
+	]
+}
