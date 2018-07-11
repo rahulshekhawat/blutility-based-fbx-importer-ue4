@@ -18,10 +18,13 @@ public:
 
 	UFbxImportLibrary(const FObjectInitializer& ObjectInitializer);
 
+	/**
+	 * Import a single fbx File inside Unreal Engine
+	 * @param FbxFilePath The path of fbx file that needs to be imported
+	 * @param DestinationPath Path of editor directory where fbx file has to be
+	 * imported (e.g. /Game/EOD/Model)
+	*/
 	UFUNCTION(BlueprintCallable, Category = FbxImportLibrary)
 	static UObject* ImportFbxFile(const FString& FbxFilePath, const FString DestinationPath);
-
-	
-	
 	
 };
